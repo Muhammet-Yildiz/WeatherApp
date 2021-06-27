@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-image: url("bgImg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.appName {
+    padding: 1.2rem;
+    padding-right: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 0.5rem;
+    font-family: 'PT Serif', serif;
+    letter-spacing: 0.1rem;
+    text-align: end;
+}
+
+form {
+    width: 100%;
+    margin: 0 auto;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 2.6rem;
+}
+
+form .alertDanger {
+    width: 560px;
+    padding: 0.6rem 0;
+    margin-top: 0.8rem;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+form .alertDanger svg {
+    margin-right: 8px;
+    height: 100%;
+}
+
+form .searchField {
+    position: relative;
+    width: 560px;
+}
+
+form .searchField input {
+    padding: 0.8rem 1rem 0.6rem 3.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+}
+
+form .searchField svg {
+    position: absolute;
+    color: rgb(48, 48, 48);
+    width: 19px;
+    height: 19px;
+    top: 16px;
+    left: 14px;
+    background-color: white;
+    z-index: 12;
+}
+
+.Employee {
+    position: relative;
+}
+
+.location {
+    height: 120px;
+    padding: 1.4rem;
+    padding-left: 3rem;
+}
+
+.location h2 {
+    font-family: 'Mukta';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.location .datetime {
+    color: rgb(241, 241, 241);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 4px;
+}
+
+.DailyCard-main {
+    position: relative;
+    display: flex;
+    margin: 3rem;
+    height: auto;
+}
+
+.DailyCard-main .daily_temprature_Emp {
+    width: 45%;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.daily_temprature_Emp .weatherIcon img {
+    height: 250px;
+    width: 25vw;
+    max-width: 250px;
+}
+
+.DailyCard-main .temprature {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.8rem;
+    padding-top: 3rem;
+    align-items: center;
+}
+
+.DailyCard-main .temprature h1 {
+    font-size: 5.3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+.DailyCard-main .temprature .description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    padding-left: 6px;
+    text-transform: capitalize;
+}
+
+.DailyCard-main .dailyExtraInfo {
+    width: 55%;
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 0.6rem 2rem;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.DailyCard-main .dailyExtraInfo div {
+    width: 33%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.DailyCard-main .dailyExtraInfo div h6 {
+    font-size: 1.3rem;
+    font-family: 'Open Sans';
+    margin-bottom: 6px;
+    letter-spacing: 0.4px;
+}
+
+.DailyCard-main .dailyExtraInfo div span {
+    font-size: 1rem;
+    margin-top: 6px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.title {
+    font-family: 'Mukta';
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+.Forecast_Emp {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 1rem;
+    padding-left: 3rem;
+}
+
+.Forecast_Emp .Disclosure_Item {
+    width: 200px;
+    padding: 0.6rem;
+    height: 242px;
+    margin: 0 2.5rem 2rem 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.Disclosure_Item .Date {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.Disclosure_Item .Hour {
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 0.4rem;
+    margin-top: 0.6rem;
+}
+
+.Disclosure_Item .WeatherIcon img {
+    position: relative;
+}
+
+.Disclosure_Item .Temprature {
+    font-weight: bold;
+    width: 100%;
+    padding: 0.2rem 0.4rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media only screen and (max-width: 1000px) {
+    .DailyCard-main {
+        flex-direction: column;
+    }
+    .DailyCard-main .dailyExtraInfo {
+        width: 100% !important;
+        height: 220px;
+        margin-top: 0.2rem;
+    }
+    form .searchField {
+        width: 70%;
+    }
+    form .alertDanger {
+        width: 70%;
+    }
+}

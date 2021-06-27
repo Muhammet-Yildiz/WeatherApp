@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Project </title>
+    <link rel="stylesheet" href="weather.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Open+Sans:wght@300&family=PT+Serif&family=Poppins:wght@500&family=Source+Sans+Pro&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <div class="appName">
+
+        <h1>WEATHER APP </h1>
+    </div>
+
+
+    <form>
+        <div class="searchField">
+            <svg class="searchSvg" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+            <input type="search" class="searchInput" placeholder="Hava durumu Ögren">
+        </div>
+
+        <div class="alertDanger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+              </svg>
+            <p>
+                Üzgünüz, herhangi bir sonuç bulunamadı
+            </p>
+        </div>
+    </form>
+
+
+    <div class="Employee">
+
+
+        <div class="location">
+
+            <h2>
+            </h2>
+
+            <div class="datetime">
+                <p>
+                </p>
+
+            </div>
+
+
+        </div>
+
+        <div class="DailyCard-main">
+
+
+            <div class="daily_temprature_Emp">
+
+                <div class="weatherIcon">
+                    <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="photo ">
+                </div>
+
+                <div class="temprature">
+                    <h1>
+                    </h1>
+                    <small class="description">
+                        Bulutlu
+                    </small>
+                </div>
+
+            </div>
+
+            <div class="dailyExtraInfo">
+
+                <div class="hightDegree">
+                    <h6>
+                    </h6>
+                    <span>En Yüksek </span>
+                </div>
+                <div class="Wind">
+                    <h6>
+                    </h6>
+                    <span>Rüzgar</span>
+                </div>
+                <div class="Sunrise">
+                    <h6></h6>
+                    <span>Gündoğumu</span>
+
+                </div>
+                <div class="lowDegree">
+
+                    <h6></h6>
+                    <span>En Düşük </span>
+                </div>
+
+                <div class="RainRate">
+
+                    <h6></h6>
+                    <span>Yagmur Yagış Oran </span>
+
+                </div>
+                <div class="Sunset">
+
+                    <h6></h6>
+                    <span>Günbatımı</span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <h1 class="title">Günlük - Saatlik Tahmin</h1>
+        <div class="Forecast_Emp">
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
+<script src="weather.js"></script>
+
+</html>
